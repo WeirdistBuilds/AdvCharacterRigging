@@ -1,2 +1,7 @@
-https://skfb.ly/6PNus
-https://skfb.ly/6PNuu
+Run Cycle 1: https://skfb.ly/6PNus
+Run Cycle 1 Animator's Survival Guide Template: https://imgur.com/a/8mzcQTb
+Run Cycle 2: https://skfb.ly/6PNuu
+Run Cycle 2 Animator's Survival Guide Template: https://imgur.com/a/20uOsgz
+3 Positive Observations about Stewart Rig: Loved the Spine Curvature node, the flipper-finger joints, and the all-in-one leg/foot joint.
+3 Negative Observations about Stewart Rig: I was a bit confused on how to bob the head appropriately, how to properly rotate the clavicle with the motion, or how to export a smoothbody rather than the block version.
+(All in all, I'd say this is my favorite rig so far to work with. One hundred, thousand, thousand times more intuitive and cooperative than MAX_RIG.)
