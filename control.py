@@ -48,3 +48,27 @@ def group(sels=[]):
         n_sels.append(sel)
 
     cmds.select(n_sels, r=True)
+
+
+def constrain(sels=[]):
+    if not sels:
+        sels = cmds.ls(sl=True)
+
+    if len(sels) % 2 == 0:
+        ctrls = sels[0:len(sels)/2]
+        jnts = sels[len(sels)/2:]
+
+        for i in range(len(ctrls)):
+            cmds.parentConstraint(ctrls[i], jnts[i], mo=True, weight=1)
+            cmds.scaleConstraint(ctrls[i], jnts[i], mo=True, weight=1)
+        cmds.select(ctrls, r=True)
+    else:
+        cmds.error("Select even number of objects, controls first, joints after.")
+
+
+def renamefk(sels=[]):
+    if not sels:
+        sels = cmds.ls(sl=True)
+
+    for sel in sels:
+        sel = cmds.rename(sel, 'FK_' + sel)
