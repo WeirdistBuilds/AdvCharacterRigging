@@ -72,3 +72,8 @@ def renamefk(sels=[]):
 
     for sel in sels:
         sel = cmds.rename(sel, 'FK_' + sel)
+
+def colorchangeblue():
+    sels = cmds.ls(sl=True)
+    for sel in sels:
+        shape = cmds.listRelatives(sel, shapes=True, 0)
